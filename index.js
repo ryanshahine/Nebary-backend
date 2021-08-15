@@ -36,6 +36,9 @@ res.send(file.path)
 
 app.post("/two", jsonParser, async function (req, res) {
   console.log(req.body.hashes);
+
+ 
+
  res.send('ok')
 })
 
@@ -44,12 +47,12 @@ app.post("/two", jsonParser, async function (req, res) {
 
 
 
-app.post("/add", upload.array("data"), async function (req, res) {
+app.post("/add", jsonParser, async function (req, res) {
   const { create } = require("ipfs-http-client");
 
   // Array1 = files van post req
   
-  let array1 = req.files;
+  let array1 = req.filebody.hashes;
   console.log(array1)
   let cidObject = {};
 
