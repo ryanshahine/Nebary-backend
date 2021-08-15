@@ -29,7 +29,7 @@ function getHtml(items) {
     <title>Nebary - Decentralized Media Sharing</title>
     <link rel="stylesheet" href="https://dweb.link/ipfs/QmQTtPLDdpyLsNEJ2heySBfYmeJYV3vjy4UsMhonTsMehZ">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
-    <script src="https://dweb.link/ipfs/QmRf5RdSiQv1QvJCMg6CghCiTFfmM46qSTHhWP8cwt1uFi defer></script>
+    <script src="https://dweb.link/ipfs/QmRf5RdSiQv1QvJCMg6CghCiTFfmM46qSTHhWP8cwt1uFi" defer></script>
   </head>
   <body>
     <!-- This example requires Tailwind CSS v2.0+ -->
