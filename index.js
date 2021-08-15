@@ -114,6 +114,6 @@ console.log(cidObject);
   }
 
   // const estuaryData = await submitEstuary()
-  console.log(awaitsubmitEstuary()+'4')
+  console.log(await submitEstuary()+'4')
   res.send(await submitEstuary())
 });
