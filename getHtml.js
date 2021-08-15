@@ -27,9 +27,9 @@ function getHtml(items) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nebary - Decentralized Media Sharing</title>
-    <link rel="stylesheet" href="https://dweb.link/ipfs/QmQTtPLDdpyLsNEJ2heySBfYmeJYV3vjy4UsMhonTsMehZ">
+    <link rel="stylesheet" href="https://ipfs.infura.io/ipfs/QmQTtPLDdpyLsNEJ2heySBfYmeJYV3vjy4UsMhonTsMehZ">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
-    <script src="https://dweb.link/ipfs/QmRf5RdSiQv1QvJCMg6CghCiTFfmM46qSTHhWP8cwt1uFi" defer></script>
+    <script src="https://ipfs.infura.io/ipfs/QmRf5RdSiQv1QvJCMg6CghCiTFfmM46qSTHhWP8cwt1uFi"></script>
   </head>
   <body>
     <!-- This example requires Tailwind CSS v2.0+ -->
