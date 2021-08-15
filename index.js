@@ -51,7 +51,6 @@ app.post("/add", jsonParser, async function (req, res) {
   const { create } = require("ipfs-http-client");
 
   // Array1 = files van post req
-  let cidObject = req.body.hashes;
   // let array1 = req.body.hashes;
   // console.log(array1)
   // let cidObject = {};
@@ -76,10 +75,12 @@ app.post("/add", jsonParser, async function (req, res) {
 
 //   const html = getHtml(cidObject)
 
-
+let cidObject = req.body.hashes;
+console.log(cidObject);
   async function submitEstuary() {
       // awaitupload ipfs moet test.js zijn
       console.log(cidObject)
+
     const html = getHtml(cidObject)
     
 
