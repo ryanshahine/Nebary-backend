@@ -93,7 +93,7 @@ console.log(cidObject);
     const file = await ipfs.add(html);
     cidObject["index.html"] = file.path
   
-
+    console.log(cidObject)
 
     for (const [key, value] of Object.entries(cidObject)) {
         fetch("https://api.estuary.tech/content/add-ipfs", {
