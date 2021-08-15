@@ -35,7 +35,7 @@ res.send(file.path)
 })
 
 app.post("/two", jsonParser, async function (req, res) {
-  console.log(req.body);
+  console.log(req.body.hashes);
  res.send('ok')
 })
 
