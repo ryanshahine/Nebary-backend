@@ -75,7 +75,9 @@ app.post("/add", jsonParser, async function (req, res) {
 
 //   const html = getHtml(cidObject)
 
-let cidObject = req.body.hashes;
+let cidObjectDict = req.body.hashes;
+let cidObject = Object.values(cidObjectDict);
+
 console.log(cidObject);
   async function submitEstuary() {
       // awaitupload ipfs moet test.js zijn
