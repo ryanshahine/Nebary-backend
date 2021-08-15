@@ -27,9 +27,9 @@ function getHtml(items) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nebary - Decentralized Media Sharing</title>
-    <link rel="stylesheet" href="https://dweb.link/ipfs/QmQTtPLDdpyLsNEJ2heySBfYmeJYV3vjy4UsMhonTsMehZ">
+    <link rel="stylesheet" href="https://ipfs.io/ipfs/QmQTtPLDdpyLsNEJ2heySBfYmeJYV3vjy4UsMhonTsMehZ">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
-    <script src="https://dweb.link/ipfs/QmRf5RdSiQv1QvJCMg6CghCiTFfmM46qSTHhWP8cwt1uFi" defer></script>
+    <script src="https://ipfs.io/ipfs/QmRf5RdSiQv1QvJCMg6CghCiTFfmM46qSTHhWP8cwt1uFi" defer></script>
   </head>
   <body>
     <!-- This example requires Tailwind CSS v2.0+ -->
@@ -84,20 +84,20 @@ function getHtml(items) {
                     </div>
                   </div>
                 </div>`
-                })}
+                }).join('')}
   
                 <!-- Video wrapper -->
                 ${Object.entries(videos).map(([filename, hash]) => {
                   return `
                 <div class="col-span-1 flex flex-col text-center rounded-lg">
-                  <!-- Image -->
+                  <!-- Video -->
                   <div class="flex-1 flex flex-col rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800 justify-center">
                     <video class="plyr-player w-full h-full" width="320" height="240" controls>
                       <source src="https://ipfs.infura.io/ipfs/${hash}" type="video/mp4">
                     Your browser does not support the video tag.
                     </video>
                   </div>
-                  <!-- Image actions -->
+                  <!-- Video actions -->
                   <div class="mt-2 flex">
                     <div class="w-0 flex-1 flex">
                       <button data-url="https://ipfs.infura.io/ipfs/${hash} js-hook="copyUrl" class="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-3 text-sm text-gray-700 bg-white shadow font-medium border border-transparent rounded-lg hover:text-gray-500 dark:text-gray-400 dark:bg-gray-800 dark:hover:text-gray-300">
@@ -109,7 +109,7 @@ function getHtml(items) {
                     </div>
                   </div>
                 </div>`
-                })}
+                }).join('')}
   
               </div>
   
