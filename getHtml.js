@@ -27,7 +27,7 @@ function getHtml(items) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nebary - Decentralized Media Sharing</title>
-    <link rel="stylesheet" href="https://bafybeia7shtufhpszi6grhkrm3kunueww2rjmarzzne32qi3ch5pqkjweq.ipfs.infura-ipfs.io/">
+    <link rel="stylesheet" href="https://bafybeigiejk3d73mxchwga6353m6fjafvwdv7vmjaokh5rxja7mttm6zsy.ipfs.infura-ipfs.io/main.css">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
   </head>
   <body>
@@ -133,7 +133,7 @@ function getHtml(items) {
     </div>
   
     <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
-    <script src="https://bafybeibrjn3dev52usjmtxizvhrsbjii2kkgasoj6p55eavm2gjriope2u.ipfs.infura-ipfs.io/"></script>
+    <script src="https://bafybeigiejk3d73mxchwga6353m6fjafvwdv7vmjaokh5rxja7mttm6zsy.ipfs.infura-ipfs.io/main.js"></script>
   </body>
   </html>`
 }
