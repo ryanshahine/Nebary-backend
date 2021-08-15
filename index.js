@@ -76,7 +76,7 @@ app.post("/add", jsonParser, async function (req, res) {
 //   const html = getHtml(cidObject)
 
 let cidObjectDict = req.body.hashes;
-let cidObject = Object.values(cidObjectDict);
+let cidObject = JSON.parse(cidObjectDict)
 
 console.log(cidObject);
   async function submitEstuary() {

@@ -7,7 +7,7 @@ function getHtml(items) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nebary - Decentralized Media Sharing</title>
     <link rel="stylesheet" href="../dist/main.css">
     <script src="main.js" defer></script>
     <meta charset='UTF-8'><link href='https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css' rel='stylesheet'>
