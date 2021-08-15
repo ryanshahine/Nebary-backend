@@ -51,28 +51,28 @@ app.post("/add", jsonParser, async function (req, res) {
   const { create } = require("ipfs-http-client");
 
   // Array1 = files van post req
-  
-  let array1 = req.body.hashes;
-  console.log(array1)
-  let cidObject = {};
+  let cidObject = req.body.hashes;
+  // let array1 = req.body.hashes;
+  // console.log(array1)
+  // let cidObject = {};
 
-  for (const number of array1) {
-    let filename = number.originalname;
+  // for (const number of array1) {
+  //   let filename = number.originalname;
 
-    if (!filename) {
-      return res.status(400).json({ status: 400, message: "no file" });
-    }
+  //   if (!filename) {
+  //     return res.status(400).json({ status: 400, message: "no file" });
+  //   }
 
-    const ipfs = create({
-      host: "ipfs.infura.io",
-      port: "5001",
-      protocol: "https",
-    });
+  //   const ipfs = create({
+  //     host: "ipfs.infura.io",
+  //     port: "5001",
+  //     protocol: "https",
+  //   });
 
-    const file = await ipfs.add(number.buffer);
+  //   const file = await ipfs.add(number.buffer);
 
-    cidObject[filename] = file.path;
-  }
+  //   cidObject[filename] = file.path;
+  // }
 
 //   const html = getHtml(cidObject)
 
