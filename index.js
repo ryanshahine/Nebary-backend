@@ -34,7 +34,7 @@ res.send(file.path)
 
 app.post("/two", async function (req, res) {
   console.log(req.body);
-  console.loq(req)
+  console.log(req)
  res.send('ok')
 })
 
