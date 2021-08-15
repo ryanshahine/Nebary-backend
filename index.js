@@ -16,6 +16,22 @@ app.listen(process.env.PORT || 3000, () => {
   console.log(`API server listening on port 3000!`);
 });
 
+app.post("/temp", upload.single("data"), async function (req, res) {
+  if (!req.file) {
+      return res.status(400).json({ status: 400, message: "no file" });
+  }
+
+  const ipfs = create({
+  host: "ipfs.infura.io",
+  port: "5001",
+  protocol: "https",
+});
+const file = await ipfs.add(req.file.buffer);
+res(file.path)
+})
+
+
+
 app.post("/add", upload.array("data"), async function (req, res) {
   const { create } = require("ipfs-http-client");
 
