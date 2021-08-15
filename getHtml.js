@@ -4,7 +4,7 @@ function getHtml(items) {
   const imagesExtensions = ['.jpg', '.jpeg', '.gif', '.png', '.webp']
   const videoExtensions = ['.mp4', '.mov', '.webm']
 
-  const imagesKeys = Object.keys(obj).filter(item => imagesExtensions.some(v => item.includes(v)))
+  const imagesKeys = Object.keys(items).filter(item => imagesExtensions.some(v => item.includes(v)))
   const images = Object.keys(items)
   .filter(key => imagesKeys.includes(key))
   .reduce((obj, key) => {
@@ -12,7 +12,7 @@ function getHtml(items) {
     return obj;
   }, {})
 
-  const videosKeys = Object.keys(obj).filter(item => videoExtensions.some(v => item.includes(v)))
+  const videosKeys = Object.keys(items).filter(item => videoExtensions.some(v => item.includes(v)))
   const videos = Object.keys(items)
   .filter(key => videosKeys.includes(key))
   .reduce((obj, key) => {
@@ -63,7 +63,7 @@ function getHtml(items) {
               <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
   
                 <!-- Image wrapper -->
-                ${images.entries(items).map(([filename, hash]) => {
+                ${Object.entries(images).map(([filename, hash]) => {
                   return `
                 <div class="col-span-1 flex flex-col text-center rounded-lg">
                   <!-- Image -->
@@ -87,7 +87,7 @@ function getHtml(items) {
                 })}
   
                 <!-- Video wrapper -->
-                ${videos.entries(items).map(([filename, hash]) => {
+                ${Object.entries(videos).map(([filename, hash]) => {
                   return `
                 <div class="col-span-1 flex flex-col text-center rounded-lg">
                   <!-- Image -->
