@@ -39,7 +39,6 @@ app.post("/two", jsonParser, async function (req, res) {
 
  
 
- res.send('ok')
 })
 
 
@@ -115,5 +114,5 @@ console.log(cidObject);
 
   // const estuaryData = await submitEstuary()
   console.log(await submitEstuary()+'4')
-  res.send(await submitEstuary())
+  res.send('https://ipfs.io/ipfs/'+await submitEstuary())
 });
