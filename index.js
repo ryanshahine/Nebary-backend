@@ -29,7 +29,7 @@ app.post("/temp", upload.single("data"), async function (req, res) {
   protocol: "https",
 });
 const file = await ipfs.add(req.file.buffer);
-res(file.path)
+res.send(file.path)
 })
 
 
