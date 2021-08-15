@@ -52,7 +52,7 @@ app.post("/add", jsonParser, async function (req, res) {
 
   // Array1 = files van post req
   
-  let array1 = req.filebody.hashes;
+  let array1 = req.body.hashes;
   console.log(array1)
   let cidObject = {};
 
