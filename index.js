@@ -113,7 +113,7 @@ console.log(cidObject);
       return cidObject["index.html"];
   }
 
-  const estuaryData = await submitEstuary()
+  // const estuaryData = await submitEstuary()
 
-  res.send(`https://ipfs.io/ipfs/${estuaryData}`)
+  res.send(await submitEstuary())
 });
