@@ -32,6 +32,15 @@ const file = await ipfs.add(req.file.buffer);
 res.send(file.path)
 })
 
+app.post("/two", async function (req, res) {
+  console.log(req.body);
+  console.loq(req)
+ res.send('ok')
+})
+
+
+
+
 
 
 app.post("/add", upload.array("data"), async function (req, res) {
