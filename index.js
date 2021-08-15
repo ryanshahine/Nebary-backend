@@ -20,7 +20,9 @@ app.post("/add", upload.array("data"), async function (req, res) {
   const { create } = require("ipfs-http-client");
 
   // Array1 = files van post req
+  
   let array1 = req.files;
+  console.log(array1)
   let cidObject = {};
 
   for (const number of array1) {
