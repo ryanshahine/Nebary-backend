@@ -6,6 +6,8 @@ const cors = require("cors");
 app.use(cors());
 const getHtml = require('./getHtml')
 const fetch = require("node-fetch");
+var bodyParser = require('body-parser')
+var jsonParser = bodyParser.json()
 
 
 app.get("/", (req, res) => {
@@ -32,9 +34,8 @@ const file = await ipfs.add(req.file.buffer);
 res.send(file.path)
 })
 
-app.post("/two", async function (req, res) {
+app.post("/two", jsonParser, async function (req, res) {
   console.log(req.body);
-  console.log(req)
  res.send('ok')
 })
 
