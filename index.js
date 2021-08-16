@@ -101,7 +101,7 @@ console.log(cidObject);
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: "Bearer ***REMOVED***",
+            Authorization: `Bearer ${process.env.API_KEY}`,
           },
           body: JSON.stringify({ name: `${key}`, root: `${value}` }),
         })
