@@ -1,2 +1,10 @@
-# Nebary-backend
- 
+# Nebary
+### "Hey Siri, upload to Web3"
+
+This is our application for HackFS 2021. Head over to Nebary.com to try it out.
+
+Nebary is a UI-less storage bridge between iOS and IPFS/Filecoin. Designed to stimulate overall Web3 adoption by using seamless iOS integrations. Built on top of Estuary, making it easily possible for new adopters to use Web3 without the hassle of bad UX. Nebary is built on top of the API services of Estuary (Protocol Labs) with a backend written in Node.js/Express.js. Nebary leverages Shortcuts, which is a native tool built into iOS similar to IFTTT. By using Shortcuts, we were able to build a bridge between IPFS/Filecoin and iOS. As UX graduates from the Amsterdam University of Applied Sciences, our key objective was to focus on adoption rather than developing new technologies. After thoroughly researching design paths, we concluded that, as usual, less is more. We opted for a UI-less solution, making it possible for new adopters to avoid the hassle of using GUI's. By using the "Hey, Siri" command, users can interact with our bridge. In order to activate the application, only a short: "Hey Siri, upload to Web3." is needed after downloading our shortcut through the official Apple channels.
+
+Nebary is built on top of the API services of Estuary (Protocol Labs) with a backend written in Node.js/Express.js. Nebary leverages Shortcuts, which is a native tool built into iOS similar to IFTTT. By using Shortcuts, we were able to build a bridge between IPFS/Filecoin and iOS. As UX graduates from the Amsterdam University of Applied Sciences, our key objective was to focus on adoption rather than developing new technologies. After thoroughly researching design paths, we concluded that, as usual, less is more. We opted for a UI-less solution, making it possible for new adopters to avoid the hassle of using GUI's. By using the "Hey, Siri" command, users can interact with our bridge. In order to activate the application, only a short: "Hey Siri, upload to Web3." is needed after downloading our shortcut through the official Apple channels.
+
+
